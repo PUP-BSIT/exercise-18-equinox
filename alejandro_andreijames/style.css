@@ -1,0 +1,338 @@
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.header {
+    background-color: #BC986A;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.header:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #fff;
+    border-bottom: 2px solid #7c5b13;
+    padding-bottom: 10px;
+}
+
+.intro {
+    background-color: #659DBD;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DAAD86;
+    transition: border-width 0.3s, box-shadow 0.3s, transform 0.3s;
+    max-width: 800px;
+}
+
+.interest {
+    background-color: #659DBD;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DAAD86;
+    transition: border-width 0.3s, box-shadow 0.3s, transform 0.3s;
+    max-width: 800px;
+}
+
+.works {
+    background-color: #659DBD;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DAAD86;
+    transition: border-width 0.3s, box-shadow 0.3s, transform 0.3s;
+    max-width: 800px;
+}
+
+.testi {
+    background-color: #659DBD;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DAAD86;
+    transition: border-width 0.3s, box-shadow 0.3s, transform 0.3s;
+    max-width: 800px;
+}
+
+.goals {
+    background-color: #659DBD;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DAAD86;
+    transition: border-width 0.3s, box-shadow 0.3s, transform 0.3s;
+    max-width: 800px;
+}
+
+.photos {
+    background-color: #659DBD;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DAAD86;
+    transition: border-width 0.3s, box-shadow 0.3s, transform 0.3s;
+    max-width: 800px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-picture {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #BC986A;
+}
+
+.personal-info {
+    font-size: 18px;
+    color: #333;
+}
+
+.personal-info h3 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+.section {
+    background-color: #659DBD;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DAAD86;
+    transition: border-width 0.3s, box-shadow 0.3s, transform 0.3s;
+    max-width: 800px;
+}
+
+.section:hover {
+    border-width: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.intro:hover {
+    border-width: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.interest:hover {
+    border-width: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.goals:hover {
+    border-width: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.works:hover {
+    border-width: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.photos:hover {
+    border-width: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.testi:hover {
+    border-width: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #a16618;
+    transition: transform 0.3s;
+}
+
+.intro h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #a16618;
+    transition: transform 0.3s;
+}
+
+.photos h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #a16618;
+    transition: transform 0.3s;
+}
+
+.testi h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #a16618;
+    transition: transform 0.3s;
+}
+
+.goals h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #a16618;
+    transition: transform 0.3s;
+}
+
+.goals h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #a16618;
+    transition: transform 0.3s;
+}
+
+.interest h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #a16618;
+    transition: transform 0.3s;
+}
+
+.works h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #a16618;
+    transition: transform 0.3s;
+}
+
+.intro:hover h2 {
+    transform: translateY(-5px);
+}
+
+.testi:hover h2 {
+    transform: translateY(-5px);
+}
+
+.photos:hover h2 {
+    transform: translateY(-5px);
+}
+
+.works:hover h2 {
+    transform: translateY(-5px);
+}
+
+.goals:hover h2 {
+    transform: translateY(-5px);
+}
+
+.interest:hover h2 {
+    transform: translateY(-5px);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #0038a7;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #8D8741;
+}
+
+.fit-picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #847070;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-card {
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    height: 200px;
+    width: 300px;
+}
+
+.gallery-card:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+    .section h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+}

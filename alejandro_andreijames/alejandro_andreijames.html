@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AJ's Page</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Hi, I'm Drei.</h1>
+        <h3><em>Get to know me more!</em></h3>
+    </div>
+	
+	<div class="intro">
+        <h2>About Me</h2>
+        <div class="about-me">
+            <img src="./images/mypic.jpg" 
+                alt="Drei's Image" 
+                class="profile-picture">
+
+            <div class="personal-info">
+                <h3>Andrei James S. Alejandro</h3>
+                <p>Age: 19</p>
+                <p>Gender: Male</p>
+				<p><em><strong>"Anyone who has never made a mistake has never
+                    tried anything new."</strong></em></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="interest">
+        <h2>My Interests and Hobbies</h2>
+        <ul>
+            <li>
+                <h3>Calisthenics Workout</h3>
+                <p>I love doing calisthenics workout 4 times a week.</p>
+            </li>
+            <li>
+                <h3>Basketball</h3>
+                <p>Basketball is my comfort sport; I do play
+                   basketball frequently.</p>
+            </li>
+            <li>
+                <h3>Online Streaming Video Games</h3>
+                <p>When I have free time, I do live streaming of online 
+                   games on my Facebook page Aiji.</p>
+            </li>
+            <li>
+                <h3>Shopping</h3>
+                <p>When I have extra money, I shop for 
+                   shirts for my outfits.</p>
+            </li>
+            <li>
+                <h3>Badminton</h3>
+                <p>I usually play badminton once a month
+                   during my free time.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="testi">
+        <h2>Testimonials</h2>
+        <ul>
+            <li><strong>Krystel </strong><p><em>"Andrei is a true genius.
+                His guidance transformed my skills and confidence. 
+                Andrei's guidance has not only significantly improved
+                my skills, but also boosted my confidence in my abilities.
+                I am forever grateful for the transformative impact he has
+                 had on my journey."</em></p>
+            </li>
+            <li><strong>Adnan </strong><p><em>"The way you inspire and
+                motivate me, as well as our other friends, is a true
+                reflection of your wonderful personality. 
+                I want to express my heartfelt gratitude for the
+                encouragement you've provided. I definitely see
+                a positive impact on myself, 
+                and I'm experiencing noticeable improvements in various
+                aspects of my life. Thank you for being such an uplifting
+                presence in my life."</em></p>
+            </li>
+            <li><strong>Rylle </strong><p><em>"Andrei is hardworking,
+                intelligent, and skilled in the field of academics,
+                he is a reliable friend that I can count on to teach
+                and help me grow as a student"</em></p>
+            </li>
+            <li><strong>Patrick </strong><p><em>"I had the pleasure of
+                working closely with Andrei James Alejandro, and I can
+                confidently say that he is an exceptional professional.
+                Andrei's dedication, expertise, and innovative thinking
+                are truly impressive. He consistently goes above and
+                beyond to deliver outstanding results. His attention
+                to detail and ability to tackle complex challenges make
+                him a valuable asset to any team.
+                I highly recommend Andrei James Alejandro for his
+                outstanding contributions and remarkable work ethic."<p></em>
+            </li>
+        </ul>
+    </div>
+
+    <div class="works">
+        <h2>My Works</h2>
+        <ol>
+            <li><a href="./country.html" target="_blank">
+                Search Countries all over the World.</a>
+            </li>
+        </ol>
+    </div>
+
+    <div class="goals">
+        <h2>My Goals</h2>
+        <ol>
+            <li><strong><em>Achieve career success and advancement
+                in my chosen field.</em></strong>
+            </li>
+            <li><strong><em>Focus on personal growth and self-improvement
+                through learning and development.</em></strong>
+            </li>
+            <li><strong><em>Prioritize and maintain good physical
+                and mental health.</em></strong>
+            </li>
+            <li><strong><em>Build strong, meaningful relationships
+                with family and friends.</em></strong>
+            </li>
+            <li><strong><em>Secure financial stability and work towards
+                financial independence.</em></strong>
+            </li>
+        </ol>
+
+        <div id="comments_section">
+            <h2>Teammates' Comment/s</h2>
+
+            <div class="teammates-comment">
+            </div>
+
+            <div class="form">
+                <form action="">
+                    <h5>Teammate's Name</h5>
+                    <input type="text"
+                        id = "name"
+                        class="name"
+                        placeholder="Place your name here...">
+
+                    <h5>Teammate's Comment</h5>
+                    <textarea name="comment"
+                        id="comment" 
+                        cols="60"
+                        rows="10"
+                        placeholder="Place your comment here...">
+                    </textarea>
+
+                    <button id="comment_button"
+                        type="button"
+                        class="btn"
+                        onclick="addComment()"
+                        disabled>Comment</button>
+                </form>
+
+                <button id="ascending_button"
+                class="btn">Sort Ascending</button>
+
+                <button id="descending_button"
+                class="btn">Sort Descending</button>
+            </div>
+        </div>
+
+    <div class="photos">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-card">
+                <img class="fit-picture"
+                    src="./images/image1.jpg"
+                    alt="image 1"/>
+            </div>
+            <div class="gallery-card">
+                <img class="fit-picture"
+                    src="./images/image2.jpg"
+                    alt="Image 2"/>
+            </div>
+            <div class="gallery-card">
+                <img class="fit-picture"
+                    src="./images/image3.jpg"
+                    alt="Image 3"/>
+            </div>
+            <div class="gallery-card">
+                <img class="fit-picture"
+                    src="./images/image4.jpg"
+                    alt="Image 4"/>
+            </div>
+            <div class="gallery-card">
+                <img class="fit-picture"
+                    src="./images/image5.jpg"
+                    alt="Image 5"/>
+            </div>
+            <div class="gallery-card">
+                <img class="fit-picture"
+                    src="./images/image6.jpg"
+                    alt="Image 6"/>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
