@@ -1,0 +1,86 @@
+body {
+    background-color: #2e3047;
+    color: #ecf0f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: linear-gradient(to right, #14487c, #e74c3c);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h2 {
+    color: #3498db;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #34495e;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #95a5a6;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: 1px solid #2c3e50;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #3498db;
+    color: #ecf0f1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e74c3c;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #34495e;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+ul li button {
+    margin-left: 5px;
+}
