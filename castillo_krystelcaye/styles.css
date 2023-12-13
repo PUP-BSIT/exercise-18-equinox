@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('orange.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    color: #773b3b;
+    text-align: center;
+    padding: 10px; 
+    font-size: 15px;
+    margin-bottom: 50px;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.598); 
+}
+
+.about-me,
+.kdrama-list,
+.interests,
+.works,
+.testimonials,
+.goals,
+.gallery {
+    background: rgba(255, 255, 255, 0.5); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.about-me img {
+    float: left;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 40px; 
+}
+
+.about-me p {
+    margin: 50px 0 10px; 
+    font-size: 1.1em;
+}
+
+.about-me::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header h1,
+.interests h2,
+.works h2,
+.testimonials h2,
+.goals h2,
+.kdrama-list h2,
+.gallery h2 {
+    color: #E8707D;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 1.3px solid rgba(255, 255, 255, 0.598); 
+    border-radius: 500px;
+    padding-bottom: 10px; 
+}
+
+.input {
+    font-size: 13px;
+    padding: 0 30px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    background-color: #ffffff;
+    line-height: 30px;
+}
+
+.interests ul,
+.interests ol,
+.goals ol,
+.works ol {
+    padding-left: 10;
+}
+
+.interests li,
+.goals ol,
+.goals li,
+.works li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.interests p,
+.works p {
+    color: #4c4c4c;
+    font-size: 0.99em;
+}
+
+.gallery img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.goals form {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    background-color: #e8707d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 10px; 
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #ff5a5f;
+}
