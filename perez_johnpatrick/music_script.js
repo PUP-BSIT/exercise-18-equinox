@@ -4,7 +4,6 @@ async function fetchMusic() {
     try {
         const response = await fetch(baseUrl);
         const data = await response.json();
-        console.log('Music:', data);
         return data;
     } catch (error) {
         console.error('Error fetching music:', error);
@@ -18,7 +17,6 @@ async function addMusic(musicData) {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: new URLSearchParams(musicData),
         });
-        console.log(await response.text());
     } catch (error) {
         console.error('Error adding music:', error);
     }
@@ -31,7 +29,6 @@ async function updateMusic(musicId, musicData) {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: new URLSearchParams({ ...musicData, id: musicId }),
         });
-        console.log(await response.text());
     } catch (error) {
         console.error('Error updating music:', error);
     }
@@ -42,14 +39,13 @@ async function deleteMusic(musicId) {
         const response = await fetch(`${baseUrl}?id=${musicId}`, {
             method: 'DELETE',
         });
-        console.log(await response.text());
     } catch (error) {
         console.error('Error deleting music:', error);
     }
 }
 
 function updateMusicList(music) {
-    const music_list = document.getElementById('music_list');
+    const music_list = document.querySelector('#music_list');
     music_list.innerHTML = '';
 
     music.forEach(musicItem => {
@@ -81,7 +77,6 @@ function createButton(text, onClick) {
 }
 
 function handleEdit(musicId) {
-    console.log('Edit button clicked for music ID:', musicId);
 
     fetch(`${baseUrl}?id=${musicId}`)
         .then(response => {
@@ -92,8 +87,6 @@ function handleEdit(musicId) {
         })
         .then(musicDetailsArray => {
             const musicDetails = musicDetailsArray[0];
-
-            console.log('Music details:', musicDetails);
 
             if (musicDetails && musicDetails.title) {
                 const editForm = document.createElement('form');
@@ -147,7 +140,7 @@ function handleEdit(musicId) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const add_music_form = document.getElementById('add_music_form');
+    const add_music_form = document.querySelector('#add_music_form');
     const response = await fetchMusic();
 
     if (response) {
