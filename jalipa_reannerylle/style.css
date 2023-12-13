@@ -1,0 +1,75 @@
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #7286D3;
+  color: black;
+}
+
+#sec1 {
+  background: #FFF2F2;
+  color: white;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#sec2, #sec3, #sec4, #sec5, #gallery {
+  background-color: #F9F5F6;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+h1, h2 {
+  color: black;
+  transition: color 0.3s;
+}
+
+ul, ol {
+  display: list-item;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: maroon;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+#sec2:hover, #sec3:hover, #sec4:hover, #sec5:hover, #gallery:hover {
+  background-color: #F2E5FF;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#comment-sec {
+  background-color: lightcyan;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+  

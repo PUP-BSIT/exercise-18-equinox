@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#pokemonList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pokemonList li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+#pokemonList li:last-child {
+    border-bottom: none;
+}
+
+b {
+    font-weight: bold;
+    color: #E53935;
+}
