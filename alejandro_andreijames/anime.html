@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="anime.css">
+    <title>Anime Database</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Anime Zone!</h1>
+    </header>
+    
+    <h2>🌟 Immerse Yourself in Anime Magic! 🍜 Embark on a journey through the
+         captivating realm of AnimeAPIHub, your ultimate haven for seamless 
+         interaction with an extensive array of anime wonders. Whether 
+         you're an anime aficionado, developer, or simply intrigued by 
+         the latest releases, our RESTful API empowers you to effortlessly 
+         explore, create, update, and delete anime data. 🎌</h2>
+
+    <h4><em>🌟 Unleash Your Creativity in the Anime Universe! 
+        🚀 Take a seat in the director's chair, molding your anime database
+         encounter. Experience the prowess of CRUD operations as you 
+         seamlessly traverse our API, elevating your beloved anime or
+          uncovering hidden treasures. The spotlight is on, the API is
+           primed, and the stage awaits your command. Let the AnimeAPIHub
+            odyssey commence! 🎬✨</em></h4>
+
+    <form id="add_anime_form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required><br>
+
+        <label for="studio">Studio:</label>
+        <input type="text" id="studio" name="studio" required><br>
+
+        <label for="year_released">Year Released:</label>
+        <input type="number" id="year_released" 
+        name="year_released" required><br>
+
+        <label for="seasons">Seasons:</label>
+        <input type="number" id="seasons" name="seasons" required><br>
+
+        <label for="episodes">Episodes:</label>
+        <input type="number" id="episodes" name="episodes" required><br>
+
+        <button type="submit">Add Anime</button>
+    </form>
+
+    <h2>Animes</h2>
+    <ul id="anime_list"></ul>
+
+    <h3>Note: After clicking the edit button. Scroll down to access the editing field.</h3>
+    <script src="anime_script.js"></script>
+</body>
+
+</html>
