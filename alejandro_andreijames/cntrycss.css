@@ -1,0 +1,45 @@
+body, h1, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    background-color: rgb(242, 242, 242);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #007BFF;
+}
+
+label {
+    display: block;
+    margin: 20px 0 10px;
+}
+
+#input_country {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#details, #related {
+    margin-top: 20px;
+}
