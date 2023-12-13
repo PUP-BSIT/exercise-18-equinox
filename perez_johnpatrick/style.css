@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #3131319c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+.interests h2,
+.works h2,
+.testimonials h2,
+.goals h2,
+.gallery h2,
+form h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interests,
+.works,
+.testimonials,
+.goals,
+.gallery,
+form {
+    font-size: 18px;
+    padding-left: 20;
+    background-color: #ffffffb7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 1000px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.testimonials li, 
+.goals li {
+    color: #000000;
+    font-size: 18px;
+    margin-left: 50px; 
+    margin-bottom: 20px;
+}
+
+.interests ul,
+.interests ol,
+.works ol,
+form ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.interests li,
+.works li {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.interests p,
+.works p {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.gallery img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery img:last-child {
+    margin-bottom: 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+    background-color: #f2f2f2;
+}
