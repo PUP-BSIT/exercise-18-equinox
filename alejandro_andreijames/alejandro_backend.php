@@ -64,7 +64,7 @@ switch ($method) {
                 '$seasons', 
                 '$episodes')";
 
-        if ($conn->query($sql) === TRUE) {
+        if ($conn->query($sql)) {
             echo "Anime added to your list successfully!";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
@@ -129,7 +129,7 @@ switch ($method) {
         if ($animeId !== null) {
             $sql = "DELETE FROM anime_table WHERE id=$animeId";
 
-            if ($conn->query($sql) === TRUE) {
+            if ($conn->query($sql)) {
                 echo "Anime deleted from the list successfully!";
             } else {
                 echo "Error deleting anime list: " . $conn->error;

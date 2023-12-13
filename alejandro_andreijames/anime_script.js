@@ -4,7 +4,6 @@ async function fetchAnime() {
     try {
         const response = await fetch(baseUrl);
         const data = await response.json();
-        console.log('Anime:', data);
         return data;
     } catch (error) {
         console.error('Error fetching anime:', error);
@@ -18,7 +17,6 @@ async function addAnime(animeData) {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: new URLSearchParams(animeData),
         });
-        console.log(await response.text());
     } catch (error) {
         console.error('Error adding anime:', error);
     }
@@ -31,7 +29,6 @@ async function updateAnime(animeId, animeData) {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: new URLSearchParams({ ...animeData, id: animeId }),
         });
-        console.log(await response.text());
     } catch (error) {
         console.error('Error updating anime:', error);
     }
@@ -42,14 +39,13 @@ async function deleteAnime(animeId) {
         const response = await fetch(`${baseUrl}?id=${animeId}`, {
             method: 'DELETE',
         });
-        console.log(await response.text());
     } catch (error) {
         console.error('Error deleting anime:', error);
     }
 }
 
 function updateAnimeList(animes) {
-    const animeList = document.getElementById('anime_list');
+    const animeList = document.querySelector('#anime_list');
     animeList.innerHTML = '';
 
     animes.forEach(anime => {
@@ -99,33 +95,33 @@ function handleEdit(animeId) {
             if (animeDetails && animeDetails.title) {
                 const editForm = document.createElement('form');
                 editForm.innerHTML = `
-                    <label for="editTitle">Title:</label>
-                    <input type="text" id="editTitle" 
+                    <label for="edit_title">Title:</label>
+                    <input type="text" id="edit_title" 
                     name="title" 
                     value="${animeDetails.title}" required>
 
-                    <label for="editAuthor">Author:</label>
-                    <input type="text" id="editAuthor" 
+                    <label for="edit_author">Author:</label>
+                    <input type="text" id="edit_author" 
                     name="author" 
                     value="${animeDetails.author || ''}" required>
 
-                    <label for="editStudio">Studio:</label>
-                    <input type="text" id="editStudio" 
+                    <label for="edit_studio">Studio:</label>
+                    <input type="text" id="edit_studio" 
                     name="studio" 
                     value="${animeDetails.studio || ''}" required>
 
-                    <label for="editYearReleased">Year Released:</label>
-                    <input type="number" id="editYearReleased" 
+                    <label for="edit_year_released">Year Released:</label>
+                    <input type="number" id="edit_year_released" 
                     name="year_released" 
                     value="${animeDetails.year_released || ''}" required>
 
-                    <label for="editSeasons">Seasons:</label>
-                    <input type="number" id="editSeasons" 
+                    <label for="edit_seasons">Seasons:</label>
+                    <input type="number" id="edit_seasons" 
                     name="seasons" 
                     value="${animeDetails.seasons || ''}" required>
 
-                    <label for="editEpisodes">Episodes:</label>
-                    <input type="number" id="editEpisodes" 
+                    <label for="edit_episodes">Episodes:</label>
+                    <input type="number" id="edit_episodes" 
                     name="episodes" 
                     value="${animeDetails.episodes || ''}" required>
 
@@ -136,12 +132,12 @@ function handleEdit(animeId) {
                     event.preventDefault();
 
                     const updatedAnimeData = {
-                    title: editForm.elements.editTitle.value,
-                    author: editForm.elements.editAuthor.value,
-                    studio: editForm.elements.editStudio.value,
-                    year_released: editForm.elements.editYearReleased.value,
-                    seasons: editForm.elements.editSeasons.value,
-                    episodes: editForm.elements.editEpisodes.value,
+                    title: editForm.elements.edit_title.value,
+                    author: editForm.elements.edit_author.value,
+                    studio: editForm.elements.edit_studio.value,
+                    year_released: editForm.elements.edit_year_released.value,
+                    seasons: editForm.elements.edit_seasons.value,
+                    episodes: editForm.elements.edit_episodes.value,
                     };
 
                     await updateAnime(animeId, updatedAnimeData);
@@ -163,7 +159,7 @@ function handleEdit(animeId) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const addAnimeForm = document.getElementById('add_anime_form');
+    const addAnimeForm = document.querySelector('#add_anime_form');
     const response = await fetchAnime();
 
     if (response) {
