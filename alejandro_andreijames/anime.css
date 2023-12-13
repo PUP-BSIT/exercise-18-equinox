@@ -22,6 +22,18 @@ h1 {
 
 h2 {
     color: #3498db;
+    text-align: justify;
+    max-width: 65%; /* Adjusted max-width */
+    margin: 10px auto; /* Centered the text */
+}
+
+h4 {
+    text-align: justify;
+    max-width: 45%; /* Adjusted max-width */
+    margin: 15px auto; /* Centered the text */
+    em {
+        font-style: normal;
+    }
 }
 
 form {
