@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Music Database</title>
+</head>
+<body>
+    <div class="music-list">
+        <h2>Add Music</h2>
+
+        <form id="add_music_form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br>
+        
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" required><br>
+        
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required><br>
+        
+            <label for="release_year">Release Year:</label>
+            <input type="number" id="release_year" name="release_year"required>
+            
+            <br>
+        
+            <label for="album">Album:</label>
+            <input type="text" id="album" name="album" required><br>
+        
+            <button type="submit">Add Music</button>
+        </form>        
+
+        <h2>Music</h2>
+        <ul id="music_list"></ul>
+    </div>
+
+  <script src="music_script.js"></script>
+</body>
+</html>
