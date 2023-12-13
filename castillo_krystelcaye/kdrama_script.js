@@ -93,20 +93,20 @@ function handleEdit(kdramaId) {
             if (kdramaDetails && kdramaDetails.title) {
                 const editForm = document.createElement('form');
                 editForm.innerHTML = `
-                    <label for="editTitle">Title:</label>
-                    <input type="text" id="editTitle" name="title" 
+                    <label for="edit_title">Title:</label>
+                    <input type="text" id="edit_title" name="title" 
                         value="${kdramaDetails.title}" required>
-                    <label for="editCast">Cast:</label>
-                    <input type="text" id="editCast" name="cast" 
+                    <label for="edit_cast">Cast:</label>
+                    <input type="text" id="edit_cast" name="cast" 
                         value="${kdramaDetails.cast || ''}" required>
-                    <label for="editYear">Year:</label>
-                    <input type="number" id="editYear" name="release_year" 
+                    <label for="edit_year">Year:</label>
+                    <input type="number" id="edit_year" name="release_year" 
                         value="${kdramaDetails.release_year || ''}" required>
-                    <label for="editGenre">Genre:</label>
-                    <input type="text" id="editGenre" name="genre" 
+                    <label for="edit_genre">Genre:</label>
+                    <input type="text" id="edit_genre" name="genre" 
                         value="${kdramaDetails.genre || ''}" required>
-                    <label for="editRating">Rating:</label>
-                    <input type="number" id="editRating" name="rating" 
+                    <label for="edit_rating">Rating:</label>
+                    <input type="number" id="edit_rating" name="rating" 
                         value="${kdramaDetails.rating || ''}" required>
                     <button type="submit">Save Changes</button>
                 `;
@@ -115,11 +115,11 @@ function handleEdit(kdramaId) {
                     event.preventDefault();
 
                     const updatedKdramaData = {
-                        title: editForm.elements.editTitle.value,
-                        cast: editForm.elements.editCast.value,
-                        release_year: editForm.elements.editYear.value,
-                        genre: editForm.elements.editGenre.value,
-                        rating: editForm.elements.editRating.value,
+                        title: editForm.elements.edit_title.value,
+                        cast: editForm.elements.edit_cast.value,
+                        release_year: editForm.elements.edit_year.value,
+                        genre: editForm.elements.edit_genre.value,
+                        rating: editForm.elements.edit_rating.value,
                     };
 
                     await updateKdrama(kdramaId, updatedKdramaData);
