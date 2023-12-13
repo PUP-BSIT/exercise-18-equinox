@@ -4,8 +4,8 @@ async function fetchKdramas() {
     try {
         const response = await fetch(baseUrl);
         const data = await response.json();
-        console.log('Kdramas:', data);
         return data;
+
     } catch (error) {
         console.error('Error fetching kdramas:', error);
     }
@@ -18,7 +18,7 @@ async function addKdrama(kdramaData) {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: new URLSearchParams(kdramaData),
         });
-        console.log(await response.text());
+
     } catch (error) {
         console.error('Error adding kdrama:', error);
     }
@@ -31,7 +31,7 @@ async function updateKdrama(kdramaId, kdramaData) {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: new URLSearchParams({ ...kdramaData, id: kdramaId }),
         });
-        console.log(await response.text());
+
     } catch (error) {
         console.error('Error updating kdrama:', error);
     }
@@ -42,14 +42,14 @@ async function deleteKdrama(kdramaId) {
         const response = await fetch(`${baseUrl}?id=${kdramaId}`, {
             method: 'DELETE',
         });
-        console.log(await response.text());
+
     } catch (error) {
         console.error('Error deleting kdrama:', error);
     }
 }
 
 function updateKdramaList(kdramas) {
-    const kdrama_list = document.getElementById('kdrama_list');
+    const kdrama_list = document.querySelector('#kdrama_list');
     kdrama_list.innerHTML = '';
 
     kdramas.forEach(kdrama => {
@@ -79,7 +79,6 @@ function createButton(text, onClick) {
 }
 
 function handleEdit(kdramaId) {
-    console.log('Edit button clicked for kdrama ID:', kdramaId);
 
     fetch(`${baseUrl}?id=${kdramaId}`)
         .then(response => {
@@ -90,8 +89,6 @@ function handleEdit(kdramaId) {
         })
         .then(kdramaDetailsArray => {
             const kdramaDetails = kdramaDetailsArray[0];
-
-            console.log('Kdrama details:', kdramaDetails);
 
             if (kdramaDetails && kdramaDetails.title) {
                 const editForm = document.createElement('form');
@@ -145,7 +142,7 @@ function handleEdit(kdramaId) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const add_kdrama_form = document.getElementById('add_kdrama_form');
+    const add_kdrama_form = document.querySelector('#add_kdrama_form');
     const response = await fetchKdramas();
 
     if (response) {
