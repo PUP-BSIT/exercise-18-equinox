@@ -1,0 +1,136 @@
+body {
+  font-family: montserrat regular, Calibri, Arial;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #f1f1f1;
+  color: #000000;
+  text-align: center;
+  padding: 32px;
+}
+
+p {
+  text-indent: 30px;
+  line-height: 25px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 700px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 20px 300px;
+}
+
+.scenery-img,
+.me-img {
+  width: 100%;
+}
+
+.card-1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 400px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 20px 300px;
+}
+
+.card-2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 400px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 20px 300px;
+}
+
+.testemonial {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 1200px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 20px 300px;
+}
+
+.restapi {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 1200px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 20px 300px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pic:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testemonial:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.column {
+  float: left;
+  width: 800px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pic {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 1300px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 20px 270px;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.photos {
+  display: flex;
+  padding: 2rem;
+  height: 200px;
+  width: 300px;
+}
+
+.goals {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 1200px;
+  padding: 20px;
+  border: 5px solid gray;
+  margin: 20px 300px;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+}
