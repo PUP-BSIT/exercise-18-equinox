@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="movies_style.css" />
+    <title>Movie Database</title>
+  </head>
+  <body>
+    <div class="welcome-section">
+      <h3>Welcome to MovieAPIHub!</h3>
+      <p>
+        🎬 Lights, Camera, Interaction! 🍿 Dive into the world of cinematic
+        wonders with MovieAPIHub, your go-to destination for seamless
+        interaction with our vast collection of movies. Whether you're a film
+        enthusiast, developer, or just curious about the latest releases, our
+        RESTful API empowers you to explore, create, update, and delete movie
+        data effortlessly.
+      </p>
+      <p>
+        Get ready to embark on a journey where you have the director's chair,
+        shaping your movie database experience. Feel the power of CRUD
+        operations in action as you navigate through our API, bringing your
+        favorite films to the forefront or discovering hidden gems. Lights are
+        dimmed, the API is ready, and the stage is yours. Let the MovieAPIHub
+        adventure begin! 🎥✨
+      </p>
+    </div>
+    <h2>Add Movie</h2>
+    <form id="movie_form">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required /><br />
+
+      <label for="director">Director:</label>
+      <input type="text" id="director" name="director" required /><br />
+
+      <label for="genre">Genre:</label>
+      <input type="text" id="genre" name="genre" required /><br />
+
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" required /><br />
+
+      <label for="views">Views:</label>
+      <input type="number" id="views" name="views" required /><br />
+
+      <button type="submit">Add Movie</button>
+    </form>
+
+    <h2>Movies</h2>
+    <p>Note: Sroll down to see the edit section</p>
+    <ul id="movie_list"></ul>
+    <script src="movies.js"></script>
+  </body>
+</html>
