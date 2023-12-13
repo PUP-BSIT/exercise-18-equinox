@@ -91,20 +91,20 @@ function handleEdit(musicId) {
             if (musicDetails && musicDetails.title) {
                 const editForm = document.createElement('form');
                 editForm.innerHTML = `
-                    <label for="editTitle">Title:</label>
-                    <input type="text" id="editTitle" name="title" 
+                    <label for="edit_title">Title:</label>
+                    <input type="text" id="edit_title" name="title" 
                         value="${musicDetails.title}" required>
-                    <label for="editArtist">Artist:</label>
-                    <input type="text" id="editArtist" name="artist" 
+                    <label for="edit_artist">Artist:</label>
+                    <input type="text" id="edit_artist" name="artist" 
                         value="${musicDetails.artist || ''}" required>
-                    <label for="editYear">Year:</label>
-                    <input type="number" id="editYear" name="release_year" 
+                    <label for="edit_year">Year:</label>
+                    <input type="number" id="edit_year" name="release_year" 
                         value="${musicDetails.release_year || ''}" required>
-                    <label for="editGenre">Genre:</label>
-                    <input type="text" id="editGenre" name="genre" 
+                    <label for="edit_genre">Genre:</label>
+                    <input type="text" id="edit_genre" name="genre" 
                         value="${musicDetails.genre || ''}" required>
-                    <label for="editAlbum">Album:</label>
-                    <input type="text" id="editAlbum" name="album" 
+                    <label for="edit_album">Album:</label>
+                    <input type="text" id="edit_album" name="album" 
                         value="${musicDetails.album || ''}" required>
                     <button type="submit">Save Changes</button>
                 `;
@@ -113,11 +113,11 @@ function handleEdit(musicId) {
                     event.preventDefault();
 
                     const updatedMusicData = {
-                        title: editForm.elements.editTitle.value,
-                        artist: editForm.elements.editArtist.value,
-                        genre: editForm.elements.editGenre.value,
-                        release_year: editForm.elements.editYear.value,
-                        album: editForm.elements.editAlbum.value,
+                        title: editForm.elements.edit_title.value,
+                        artist: editForm.elements.edit_artist.value,
+                        genre: editForm.elements.edit_genre.value,
+                        release_year: editForm.elements.edit_year.value,
+                        album: editForm.elements.edit_album.value,
                     };
 
                     await updateMusic(musicId, updatedMusicData);
